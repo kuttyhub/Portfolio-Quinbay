@@ -155,8 +155,20 @@ section h1 {
 .timeline h4 {
   padding: 0rem 0.8rem;
 }
+
 .timeline .content {
+  position: relative;
   border-left: 0.1rem black solid;
+}
+
+.circle {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 25%;
+  left: -1.25%;
 }
 
 /* Project sections */
