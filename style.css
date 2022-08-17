@@ -102,11 +102,21 @@ section h1 {
 }
 
 .line {
-  height: 2vh;
-  width: 0.1rem;
-  background-color: #c6c6c6;
+  height: 0.1rem;
+  width: 6rem;
+  border-radius: 0.5rem;
+  animation: grow 0.5s ease-in-out 0s infinite alternate;
 }
-
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+    background-color: #c6c6c6;
+  }
+  100% {
+    transform: scaleX(1);
+    background-color: #000;
+  }
+}
 #about_me {
   display: flex;
   align-items: center;
